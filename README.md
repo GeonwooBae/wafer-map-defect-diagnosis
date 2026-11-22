@@ -143,6 +143,9 @@ The final test defect recall was approximately:
 This stage was designed to prioritize the detection of defective wafers and reduce the probability that a true defect would be classified directly as Normal.
 
 ---
+### Binary Screening Result
+
+![Binary Defect Screening Confusion Matrix](figures/binary_confusion_matrix.png)
 
 ## 4. 8-Class Failure Pattern Classification
 
@@ -158,6 +161,9 @@ Macro F1-score  = 0.8481
 The model demonstrated strong overall classification performance while still showing class-dependent differences in difficulty.
 
 ---
+### Classification Result
+
+![Simple CNN Test Confusion Matrix](figures/cnn_confusion_matrix.png)
 
 ## 5. Spatial Pattern Analysis
 
@@ -178,6 +184,13 @@ These features were used to construct representative spatial prototypes for each
 A new wafer could then be compared with the expected spatial structure of the predicted class.
 
 ---
+### Spatial Prototype
+
+![Spatial Prototype Heatmap](figures/spatial_prototype_heatmap.png)
+
+### Defect Signature
+
+![Defect Signature Heatmap](figures/defect_signature_heatmap.png)
 
 ## 6. Grad-CAM Interpretation
 
@@ -202,6 +215,9 @@ If the CNN prediction, spatial pattern, and Grad-CAM evidence agree, confidence 
 Grad-CAM is used as interpretability evidence rather than proof of physical causality.
 
 ---
+### Grad-CAM Examples
+
+![Grad-CAM Examples](figures/gradcam_examples.png)
 
 ## 7. Reliability Assessment
 
@@ -251,6 +267,9 @@ For actual normal wafers:
 This structure allows uncertain cases to be separated for additional inspection rather than automatically forcing a Normal or Defect decision.
 
 ---
+### Final 3-State Decision
+
+![Final Normal Defect Review Decision](figures/final_3state_decision.png)
 
 ## 9. Why Use a Review State?
 
