@@ -380,6 +380,34 @@ Reliability
 to provide a more practical wafer map diagnosis workflow.
 
 ---
+## Results
+
+- [Model Comparison](results/model_comparison.csv)
+- [Final 3-State Decision Counts](results/final_3state_counts.csv)
+- [Final 3-State Decision Ratios](results/final_3state_ratios.csv)
+
+---
+
+## Repository Structure
+
+```text
+wafer-map-defect-diagnosis/
+├── README.md
+├── notebooks/
+│   └── wafer_map_defect_diagnosis.ipynb
+├── figures/
+│   ├── binary_confusion_matrix.png
+│   ├── cnn_confusion_matrix.png
+│   ├── defect_signature_heatmap.png
+│   ├── final_3state_decision.png
+│   ├── gradcam_examples.png
+│   └── spatial_prototype_heatmap.png
+├── results/
+│   ├── final_3state_counts.csv
+│   ├── final_3state_ratios.csv
+│   └── model_comparison.csv
+├── requirements.txt
+└── .gitignore
 
 ## Tools
 
